@@ -1,0 +1,44 @@
+/* ==========================================================
+   tokens.css  -  every colour, font, radius and size lives here.
+   Change a value once and the whole site updates.
+   ========================================================== */
+:root{
+  --u:1;               /* the size unit: home.js/project.js set it from the window, so everything scales together */
+  /* surfaces */
+  --ink:#121010;          /* page background at the bottom of the dusk fade */
+  --card:#141010;         /* inside of cards and the form */
+  --field:#1b1514;        /* input backgrounds */
+  --dusk-top:#4A1A1F;     /* top of the dusk fade */
+  --dusk-mid:#241012;     /* middle of the dusk fade */
+
+  /* brand reds and the orange accent */
+  --red:#E8392F;
+  --red-deep:#C0211F;
+  --red-dark:#7A1A1B;
+  --orange:#FF6A3A;
+  --amber:#FF9A4D;
+  --peach:#FFD6A8;
+
+  /* text */
+  --text:#F2EDE8;
+  --text-soft:#F3E4DA;
+  --muted:#9a8f8a;
+  --hairline:#2e2523;
+
+  /* gradients reused everywhere */
+  --grad-text:linear-gradient(180deg,var(--red) 0%,var(--orange) 55%,var(--amber) 100%);
+  --grad-btn:linear-gradient(90deg,#FF6A3A,#FF9A4D);
+  /* the edge-glow: a FULL circle of colour with no transparent gaps.
+     It rotates slowly, so the light shifts around the frame. */
+  --ring:conic-gradient(from 0deg,#7A1A1B 0%,#C0211F 22%,#FF4A2E 42%,#FF9A4D 52%,#FF4A2E 62%,#C0211F 80%,#7A1A1B 100%);
+
+  /* type */
+  --font-display:'Anton',Impact,'Arial Narrow Bold',sans-serif;
+  --font-body:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+
+  /* shape */
+  --r-card:12px;      /* outer radius of every frame */
+  --r-inner:10.5px;   /* inner radius = outer radius minus the 1.5px ring */
+  --r-field:10px;
+  --r-btn:12px;       /* the Submit / Back buttons: rounded rectangle */
+}

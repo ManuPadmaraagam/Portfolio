@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Manu Padmaraagam | Product &amp; Interaction Designer</title>
+  <meta name="description" content="Manu Padmaraagam designs at the intersection of digital product, spatial making, and sonic experience.">
+  <meta name="theme-color" content="#4A1A1F">
+  <link rel="icon" href="assets/applogo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/home.css">
+  <script src="js/home.js" defer></script>
+</head>
+<body id="top">
+  <div class="backdrop" aria-hidden="true"></div>
+  <div class="topbar" aria-hidden="true"></div>
+
+  <!-- Ambient motion graphics: drifting light + slow rings. js/home.js moves them with the scroll. -->
+  <div class="fx" id="fx" aria-hidden="true">
+    <span class="orb o1"><i></i></span><span class="orb o2"><i></i></span><span class="orb o3"><i></i></span>
+    <span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span>
+  </div>
+
+  <!-- The name. JS collapses it to MP and docks it top-centre. -->
+  <h1 class="name" id="name">
+    <a href="#top" aria-label="Manu Padmaraagam, back to top">
+      <span class="name-row" aria-hidden="true">MANU</span>
+      <span class="name-row" aria-hidden="true">PADMARAAGAM</span>
+    </a>
+  </h1>
+
+  <main>
+    <!-- ================= STORY: hero, then projects ================= -->
+    <section class="story" id="story" aria-label="Introduction and projects">
+      <div class="stage" id="stage">
+        <div class="glow" id="glow" aria-hidden="true"></div>
+
+        <div class="hero" id="hero">
+          <div class="band hero-band" data-band="1" aria-hidden="true"><div class="band-in"><span class="band-seg">DESIGN<b class="dot"></b>SOUND<b class="dot"></b>SYSTEMS<b class="dot"></b>SPACE<b class="dot"></b></span></div></div>
+          <p class="intro" id="intro">I'm Manu Padmaraagam. I design at the intersection of digital product, spatial making, and sonic experience.</p>
+          <ul class="hero-tags" id="heroTags" aria-hidden="true"><li>Digital product</li><li>Spatial making</li><li>Sonic experience</li></ul>
+        </div>
+
+        <div class="work" id="work">
+          <h2 class="work-title display grad" id="workTitle">PROJECTS</h2>
+          <p class="work-sub" id="workSub">Selected works</p>
+
+          <div class="track" id="track">
+            <!-- ===== PROJECT CARD (copy this whole block to add a project) =====
+                 data-glow : r,g,b of the page glow while this card is centred
+                 --ring    : the edge-glow colours for this project
+                 --scrim   : r,g,b of the darkening behind the caption
+                 --accent  : tag + rule colour
+                 --cover   : cover background (colour or gradient)            -->
+            <a class="pc frame" href="projects/dory.html" data-glow="184,103,47"
+               style="--ring:conic-gradient(from 0deg,#7A1A1B 0%,#C0211F 22%,#FF6A3A 40%,#E8D5CC 50%,#FF6A3A 60%,#C0211F 80%,#7A1A1B 100%);--scrim:22,16,16;--accent:#FF9A4D;--cover:#8f8f93;--ghost:#7d7d82">
+              <span class="spin" aria-hidden="true"></span>
+              <div class="inner">
+                <div class="cover" aria-hidden="true">
+                  <div class="layer" data-k="12" data-o="0"><span class="ghost">DORY</span></div>
+                  <div class="layer full" data-k="36" data-o="50"><img src="assets/dory/hero.webp" alt="" loading="lazy" decoding="async"></div>
+                </div>
+                <div class="scrim"></div><div class="dim"></div>
+                <div class="caption">
+                  <span class="tag">Product · RFID</span>
+                  <h3 class="title" aria-label="Dory">DORY</h3>
+                  <span class="rule"></span>
+                  <p class="summary">A smart key-holder that helps every household member leave home prepared.</p>
+                </div>
+              </div>
+            </a>
+
+            <a class="pc frame" href="projects/loomi.html" data-glow="125,184,58"
+               style="--ring:conic-gradient(from 0deg,#7A1A1B 0%,#C0211F 24%,#FF4A2E 42%,#BDF56F 52%,#FF4A2E 60%,#C0211F 80%,#7A1A1B 100%);--scrim:14,16,12;--accent:#BDF56F;--cover:#282828;--ghost:rgba(189,245,111,.22)">
+              <span class="spin" aria-hidden="true"></span>
+              <div class="inner">
+                <div class="cover" aria-hidden="true">
+                  <div class="layer" data-k="12" data-o="0"><span class="ghost">LOOMI</span></div>
+                  <div class="layer logo" data-k="36" data-o="50"><img src="assets/loomi/logo.png" alt="" loading="lazy" decoding="async"></div>
+                </div>
+                <div class="scrim"></div><div class="dim"></div>
+                <div class="caption">
+                  <span class="tag">iOS app</span>
+                  <h3 class="title" aria-label="Loomi">LOOMI</h3>
+                  <span class="rule"></span>
+                  <p class="summary">Where parents come together to choose better stories</p>
+                </div>
+              </div>
+            </a>
+
+            <a class="pc frame" href="projects/disegno.html" data-glow="192,33,31"
+               style="--ring:conic-gradient(from 0deg,#3A0D10 0%,#8E1B1B 25%,#E8392F 45%,#FF5C4A 52%,#E8392F 60%,#8E1B1B 80%,#3A0D10 100%);--scrim:38,14,6;--accent:#FFB27A;--cover:#FE9A00;--ghost:rgba(26,26,26,.3)">
+              <span class="spin" aria-hidden="true"></span>
+              <div class="inner">
+                <div class="cover" aria-hidden="true">
+                  <div class="layer" data-k="12" data-o="0"><span class="ghost">DISEGNO</span></div>
+                  <div class="layer logo" data-k="36" data-o="50"><img src="assets/disegno/logo.png" alt="" loading="lazy" decoding="async"></div>
+                </div>
+                <div class="scrim"></div><div class="dim"></div>
+                <div class="caption">
+                  <span class="tag">Web platform</span>
+                  <h3 class="title" aria-label="Disegno">DISEGNO</h3>
+                  <span class="rule"></span>
+                  <p class="summary">A personalized website that exhibits self-crafted mini-worlds for drawing enthusiasts.</p>
+                </div>
+              </div>
+            </a>
+
+            <a class="pc frame" href="projects/nightpaws.html" data-glow="42,94,232"
+               style="--ring:conic-gradient(from 0deg,#7A1A1B 0%,#C0211F 22%,#FF6A3A 42%,#FFB07A 52%,#FF6A3A 62%,#C0211F 80%,#7A1A1B 100%);--scrim:8,12,26;--accent:#FF9A4D;--cover:linear-gradient(180deg,#0a1020 0%,#16305e 100%);--ghost:rgba(207,224,255,.22)">
+              <span class="spin" aria-hidden="true"></span>
+              <div class="inner">
+                <div class="cover" aria-hidden="true">
+                  <div class="layer" data-k="12" data-o="0"><span class="ghost">NIGHTPAWS</span></div>
+                  <div class="layer full" data-k="36" data-o="50"><img src="assets/nightpaws/hero.webp" alt="" loading="lazy" decoding="async"></div>
+                </div>
+                <div class="scrim"></div><div class="dim"></div>
+                <div class="caption">
+                  <span class="tag">Service design</span>
+                  <h3 class="title" aria-label="NightPaws">NIGHTPAWS</h3>
+                  <span class="rule"></span>
+                  <p class="summary">The station is not the destination.</p>
+                </div>
+              </div>
+            </a>
+
+            <a class="pc frame" href="projects/sediment.html" data-glow="232,57,47"
+               style="--ring:conic-gradient(from 0deg,#7A1A1B 0%,#C0211F 22%,#FF4A2E 42%,#FF9A4D 52%,#FF4A2E 62%,#C0211F 80%,#7A1A1B 100%);--scrim:26,10,8;--accent:#FF6A3A;--cover:#2a1512;--ghost:rgba(232,57,47,.25)">
+              <span class="spin" aria-hidden="true"></span>
+              <div class="inner">
+                <div class="cover" aria-hidden="true">
+                  <div class="layer" data-k="12" data-o="0"><span class="ghost">SEDIMENT</span></div>
+                  <div class="layer full" data-k="36" data-o="50"><img src="assets/sediment/hero.webp" alt="" loading="lazy" decoding="async"></div>
+                </div>
+                <div class="scrim"></div><div class="dim"></div>
+                <div class="caption">
+                  <span class="tag">Installation</span>
+                  <h3 class="title" aria-label="Sediment">SEDIMENT</h3>
+                  <span class="rule"></span>
+                  <p class="summary">Sediment explores time, memory, and material change.</p>
+                </div>
+              </div>
+            </a>
+
+            <a class="pc frame pc-more" href="projects/all.html" data-glow="255,106,58"
+               style="--ring:conic-gradient(from 0deg,#7A1A1B 0%,#C0211F 22%,#FF6A3A 40%,#FFD6A8 50%,#FF6A3A 60%,#C0211F 80%,#7A1A1B 100%);--scrim:30,14,8;--accent:#FFB27A;--cover:linear-gradient(160deg,#3a1410 0%,#1a0d0b 100%);--ghost:rgba(255,154,77,.2)">
+              <span class="spin" aria-hidden="true"></span>
+              <div class="inner">
+                <div class="cover" aria-hidden="true">
+                  <div class="layer" data-k="12" data-o="0"><span class="ghost">MORE</span></div>
+                  <div class="layer" data-k="36" data-o="50"></div>
+                  <div class="layer" data-k="72" data-o="100"></div>
+                </div>
+                <div class="scrim"></div><div class="dim"></div>
+                <div class="caption">
+                  <span class="tag">Archive</span>
+                  <h3 class="title" aria-label="More work">MORE WORK</h3>
+                  <span class="rule"></span>
+                  <p class="summary">See the full archive of projects, studies and experiments.</p>
+                </div>
+              </div>
+            </a>
+            <!-- ===== END PROJECT CARD ===== -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section about" id="about" aria-labelledby="about-h">
+      <div class="band about-band" data-band="-1" aria-hidden="true"><div class="band-in"><span class="band-seg">MINIMALISM<b class="dot"></b>TECHNOLOGY<b class="dot"></b>SONIC EXPERIENCE<b class="dot"></b></span></div></div>
+      <span class="ghost-word" data-par="0.16" aria-hidden="true">ABOUT</span>
+      <div class="wide about-grid">
+        <div class="a-left">
+          <div data-reveal="rise" class="eyebrow">01 &mdash; About</div>
+          <div data-reveal="rise"><h2 class="sec-title xl display grad" id="about-h">ABOUT</h2></div>
+        </div>
+        <div class="a-right">
+          <p class="lead" data-reveal="words">Designing at the intersection of minimalism, technology, and sound, where restraint in form meets depth in experience.</p>
+          <p class="body" data-reveal="rise">I came to product design through games, where the design problem has always been human behaviour: how people make decisions, process feedback, and stay oriented when complexity pushes back. <mark class="hl">Screens are cognitive systems, not just visual artefacts</mark>, and good design earns trust at every step of a journey, not just the ones that make it into a case study. I'm completing a Master of Design Innovation and Technology at RMIT (graduating July 2027), actively seeking internship or part-time roles alongside my studies. I work in Figma and have built hands-on fluency with AI tools including Claude Code, moving closer to code than most designers and taking direct ownership of what ships. <mark class="hl">I design for outcomes, not artefacts.</mark></p>
+        </div>
+      </div>
+      <div class="wide pillars">
+        <div class="pillar" data-reveal="rise"><span class="n">01</span><h3 class="display">MINIMALISM</h3><p>Restraint in form, so the idea does the talking.</p></div>
+        <div class="pillar" data-reveal="rise"><span class="n">02</span><h3 class="display">TECHNOLOGY</h3><p>Systems thinking from games design, carried into products.</p></div>
+        <div class="pillar" data-reveal="rise"><span class="n">03</span><h3 class="display">SONIC EXPERIENCE</h3><p>Sound treated as part of the interface, not decoration.</p></div>
+      </div>
+    </section>
+
+    <!-- ================= TOOLS ================= -->
+    <section class="section tools" id="tools" aria-labelledby="tools-h">
+      <span class="ghost-word" data-par="0.14" aria-hidden="true">TOOLS</span>
+      <div class="wide">
+        <div class="sec-head">
+          <div>
+            <div data-reveal="rise" class="eyebrow">02 &mdash; Tools</div>
+            <div data-reveal="rise"><h2 class="sec-title xl display grad" id="tools-h">TOOLS</h2></div>
+          </div>
+          <p class="sec-note" data-reveal="rise">What I design, prototype and build with.</p>
+        </div>
+        <div class="tool-grid">
+          <div class="tool" data-reveal="rise"><span class="n">01</span><h3 class="display">FIGMA</h3><p>Interface design, prototyping, flows and component systems</p></div>
+          <div class="tool" data-reveal="rise"><span class="n">02</span><h3 class="display">ADOBE CREATIVE CLOUD</h3><p>Visual design, image editing, layout and presentation assets</p></div>
+          <div class="tool" data-reveal="rise"><span class="n">03</span><h3 class="display">SWIFTUI</h3><p>Native iOS prototyping, interface logic and app interaction</p></div>
+          <div class="tool" data-reveal="rise"><span class="n">04</span><h3 class="display">XCODE</h3><p>Building, testing and debugging functional iOS prototypes</p></div>
+          <div class="tool" data-reveal="rise"><span class="n">05</span><h3 class="display">ARDUINO</h3><p>Hardware prototyping, sensors, circuits and interaction testing</p></div>
+          <div class="tool" data-reveal="rise"><span class="n">06</span><h3 class="display">UNREAL ENGINE</h3><p>Interactive environments, gameplay systems and real-time prototyping</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section class="section education" id="education" aria-labelledby="edu-h">
+      <span class="ghost-word" data-par="0.12" aria-hidden="true">LEARN</span>
+      <div class="wide edu-grid">
+        <div class="edu-left">
+          <div data-reveal="rise" class="eyebrow">03 &mdash; Education</div>
+          <div data-reveal="rise"><h2 class="sec-title xl display grad" id="edu-h">EDUCATION</h2></div>
+          <p class="sec-note" data-reveal="rise">From foundations in graphic design to a master's in design innovation and technology.</p>
+        </div>
+        <div class="timeline" id="timeline">
+          <div class="tl-track"></div><div class="tl-fill" id="tlFill"></div>
+          <div class="entry" data-reveal="rise"><div class="yr">2025–2027</div><h3>Master of Design Innovation and Technology</h3><div class="school">RMIT University</div><div class="desc">Full product design lifecycle, interaction design, design systems, and emerging technology practice.</div></div>
+          <div class="entry" data-reveal="rise"><div class="yr">2022–2025</div><h3>Bachelor of Design (Games)</h3><div class="school">RMIT University</div><div class="desc">Interaction design, systems thinking, typography, visual design, and UI/UX across digital products.</div></div>
+          <div class="entry" data-reveal="rise"><div class="yr">2025</div><h3>Foundation Degree</h3><div class="school">Apple Foundation Program</div><div class="desc">Native mobile development fundamentals, iOS application building, and design-to-code workflow.</div></div>
+          <div class="entry" data-reveal="rise"><div class="yr">2019–2022</div><h3>High School</h3><div class="school">Brentwood Secondary College</div><div class="desc">Foundational graphic design, visual communication, and design thinking principles.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section contact" id="contact" aria-labelledby="contact-h">
+      <span class="ghost-word" data-par="0.12" aria-hidden="true">HELLO</span>
+      <div class="wide contact-grid">
+        <div class="c-left">
+          <h2 id="contact-h" class="sr-only">Contact</h2>
+          <div class="eyebrow" data-reveal="rise">04 &mdash; Contact</div>
+          <div aria-hidden="true">
+            <div class="mask"><span class="c-head display" id="cHead1">LET'S WORK</span></div>
+            <div class="mask"><span class="c-head b display" id="cHead2">TOGETHER</span></div>
+          </div>
+          <p class="c-intro" id="cIntro">Like my work or want to work with me? Send me your details!</p>
+          <p class="meta" id="cMeta">Brunswick, Vic, AU<br>
+            <a href="mailto:manupadmaraagam03@gmail.com">manupadmaraagam03@gmail.com</a></p>
+        </div>
+
+        <!-- Replace YOUR_ID with your Formspree form id (formspree.io). Until you do,
+             the form opens the visitor's email app addressed to the mailto below. -->
+        <div class="frame form-frame" id="formFrame" data-mailto="manupadmaraagam03@gmail.com">
+          <span class="spin" aria-hidden="true"></span>
+          <div class="inner">
+            <form id="contactForm" action="https://formspree.io/f/YOUR_ID" method="post" novalidate>
+              <div class="field"><label for="f-name">NAME</label><input id="f-name" name="name" type="text" autocomplete="name"><div class="err" id="e-name" role="alert"></div></div>
+              <div class="field"><label for="f-email">EMAIL</label><input id="f-email" name="email" type="email" autocomplete="email"><div class="err" id="e-email" role="alert"></div></div>
+              <div class="field"><label for="f-msg">MESSAGE</label><textarea id="f-msg" name="message"></textarea><div class="err" id="e-msg" role="alert"></div></div>
+              <button class="btn" type="submit" id="submitBtn">Submit</button>
+              <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

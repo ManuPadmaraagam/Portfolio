@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>{{TITLE}} | Manu Padmaraagam</title>
+  <meta name="description" content="{{SUMMARY}}">
+  <meta name="theme-color" content="#4A1A1F">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/project.css">
+  <script src="../js/project.js" defer></script>
+</head>
+<!-- The four variables below are the ONLY things that differ between project pages (plus the text). -->
+<body style="--accent:{{ACCENT}};--scrim:{{SCRIM}};--cover:{{COVER}};--ghost:{{GHOST}}">
+  <div class="backdrop" aria-hidden="true"></div>
+  <div class="topbar" aria-hidden="true"></div>
+  <header class="mp"><a href="../index.html" aria-label="Manu Padmaraagam, home">MP</a></header>
+  <a class="btn btn-sm back" href="../index.html#story">Back</a>
+
+  <main>
+    <!-- ===== COVER: three layers that drift at different speeds ===== -->
+    <section class="p-cover" aria-label="{{TITLE}} cover">
+      <div class="cover-art" aria-hidden="true">
+        <div class="layer" data-speed="0.08"><span class="ghost">{{NAME}}</span></div>
+        <div class="layer" data-speed="0.18"><img src="../assets/{{SLUG}}-mid.png" alt="" onerror="this.remove()"></div>
+        <div class="layer" data-speed="0.30"><img src="../assets/{{SLUG}}-front.png" alt="" onerror="this.remove()"></div>
+      </div>
+      <div class="scrim"></div>
+      <div class="p-caption">
+        <div class="wrap">
+          <span class="tag">{{TAG}}</span>
+          <h1 class="p-title">{{NAME}}</h1>
+          <span class="rule"></span>
+          <p class="p-summary">{{SUMMARY}}</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BODY: replace the placeholder text and image boxes ===== -->
+    <section class="p-body wrap">
+      <dl class="p-meta reveal">
+        <div><dt>ROLE</dt><dd>[Your role]</dd></div>
+        <div><dt>YEAR</dt><dd>[Year]</dd></div>
+        <div><dt>TOOLS</dt><dd>[Tools used]</dd></div>
+      </dl>
+
+      <h2 class="p-h display grad reveal">OVERVIEW</h2>
+      <p class="p-text reveal">[Two or three sentences on the problem, who it is for, and what you made.]</p>
+      <div class="shot wide reveal">IMAGE 16:9</div>
+
+      <h2 class="p-h display grad reveal">PROCESS</h2>
+      <p class="p-text reveal">[How you got there: research, sketches, testing, the decisions that mattered.]</p>
+      <div class="shot std reveal">IMAGE 4:3</div>
+      <div class="shot std reveal">IMAGE 4:3</div>
+
+      <h2 class="p-h display grad reveal">OUTCOME</h2>
+      <p class="p-text reveal">[What happened, what you learned, what you would do next.]</p>
+    </section>
+
+    <!-- ===== EXPLORE MORE: the other three projects ===== -->
+    <section class="explore wrap" aria-labelledby="more-h">
+      <h2 class="p-h display grad reveal" id="more-h">EXPLORE MORE</h2>
+      <div class="explore-grid reveal">{{MINI}}
+      </div>
+    </section>
+  </main>
+</body>
+</html>

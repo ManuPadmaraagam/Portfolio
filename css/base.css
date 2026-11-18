@@ -1,0 +1,50 @@
+/* ==========================================================
+   base.css  -  reset, page background, text helpers.
+   ========================================================== */
+
+/* Lets Chrome cross-fade between pages (home -> project) for free. */
+@view-transition{navigation:auto}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;background:var(--ink);color-scheme:dark}
+body{
+  margin:0;min-height:100vh;
+  color:var(--text);font-family:var(--font-body);line-height:1.45;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,p,dl,dd,figure{margin:0}
+
+/* The dusk fade is fixed to the screen, so it stays put while content scrolls. */
+.backdrop{
+  position:fixed;inset:0;z-index:-1;
+  background:linear-gradient(180deg,var(--dusk-top) 0%,var(--dusk-mid) 40%,var(--ink) 100%);
+}
+/* A soft red fade under the header so scrolling content never hits it hard. */
+.topbar{
+  position:fixed;left:0;right:0;top:0;height:64px;z-index:20;pointer-events:none;
+  background:linear-gradient(180deg,var(--dusk-top),rgba(74,26,31,0));
+}
+
+/* gradient text: red at the top to amber at the bottom */
+.grad{
+  background:var(--grad-text);
+  -webkit-background-clip:text;background-clip:text;
+  color:transparent;-webkit-text-fill-color:transparent;
+}
+.display{font-family:var(--font-display);font-weight:400;letter-spacing:.3px;line-height:.98}
+
+/* the centred reading column used by every text section */
+.wrap{width:min(100% - 16vw,640px);margin-inline:auto}
+
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* Reduced motion: stop the always-on rotation. Scroll-linked motion stays,
+   because the visitor controls it with their own finger.
+   Use transition:none here. A near-zero duration still starts a transition, and
+   while one runs the browser reports the OLD size, which broke our measurements. */
+@media (prefers-reduced-motion:reduce){
+  .spin{animation:none!important}
+  *,*::before,*::after{transition:none!important}
+}

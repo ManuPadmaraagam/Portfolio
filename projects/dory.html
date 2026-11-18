@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Dory | Manu Padmaraagam</title>
+  <meta name="description" content="A smart key-holder that helps every household member leave home prepared.">
+  <meta name="theme-color" content="#4A1A1F">
+  <link rel="icon" href="../assets/applogo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&display=swap">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/project.css">
+  <script src="../js/project.js" defer></script>
+</head>
+<body style="--accent:#FF9A4D;--hbg:#8f8f93">
+  <div class="backdrop" aria-hidden="true"></div>
+  <div class="topbar" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><i id="prog"></i></div>
+  <header class="mp"><a href="../index.html" aria-label="Manu Padmaraagam, home">MP</a></header>
+  <a class="back" href="../index.html#story" aria-label="Back"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></a>
+
+  <main>
+    <section class="p-cover wide" aria-label="Dory cover">
+      <span class="ghost-title" aria-hidden="true" data-par="0.10">DORY</span>
+      <div class="cover-text">
+        <span class="tag">Product · RFID</span>
+        <h1 class="p-title display">DORY</h1>
+        <p class="p-summary">A smart key-holder that helps every household member leave home prepared.</p>
+      </div>
+      <div class="hero" data-hero><img style="object-position:50% 38%" src="../assets/dory/hero.webp" width="2000" height="1880" alt="DORY" loading="eager" decoding="async" class="hero-img cover"></div>
+    </section>
+
+    <section class="wide"><dl class="p-meta reveal"><div><dt>Field</dt><dd>Product Design</dd></div><div><dt>Client</dt><dd>RMIT University</dd></div><div><dt>Role</dt><dd>Design Lead</dd></div><div><dt>Date</dt><dd>June 2025</dd></div></dl></section>
+
+    <div class="wide p-sections">
+<section class="sec">
+  <div class="sec-label"><span class="sn">01</span><h2 class="display">PROBLEM</h2></div>
+  <div class="sec-body"><p class="p-text reveal">Leaving home is one of the easiest moments to get wrong. People are often rushed, distracted and thinking about the day ahead, which makes small essentials easy to forget until it is too late. In a shared household, these moments build into repeated stress, missed items and last-minute communication gaps. The opportunity was to design a system that supports people at the exact point of departure, helping them leave prepared without adding another task to their routine.</p><figure class="fig land reveal" style="--pos:50% 38%;"><span class="f"><img src="../assets/dory/problem-1.webp" width="948" height="1060" alt="Person tying a shoe at the door" loading="lazy" decoding="async"></span></figure></div>
+</section><section class="sec">
+  <div class="sec-label"><span class="sn">02</span><h2 class="display">PROPOSED SOLUTION</h2></div>
+  <div class="sec-body"><p class="p-text reveal">Dory transforms a traditional key holder into a smart departure hub that helps household members leave home prepared. Using RFID-based user recognition, the system identifies who is leaving and displays personalised reminders relevant to their day. Weather-aware prompts help prevent common oversights, such as forgetting an umbrella, while a shared digital messaging system replaces temporary notes with a persistent communication space for the household. By embedding reminders and information into an existing daily habit, Dory reduces forgetfulness without requiring users to adopt new behaviours or routines.</p></div>
+</section><section class="sec">
+  <div class="sec-label"><span class="sn">03</span><h2 class="display">PROCESS</h2></div>
+  <div class="sec-body"><figure class="fig full card reveal" style="--figbg:#ffffff;"><span class="f"><img src="../assets/loomi/circuit.webp" width="1515" height="775" alt="Tinkercad circuit: Arduino Uno, two RFID readers and a TFT display" loading="lazy" decoding="async"></span></figure><p class="p-text reveal">We began the circuit design by mapping how the key-holder would recognise different users and display the right information on screen. The early setup used an Arduino Uno, two RFID readers and a TFT display to test the core interaction logic before moving into the final prototype. The key decision was to separate user recognition from the display output, allowing each RFID scan to trigger a personalised screen state. This helped us test wiring, input reliability and screen feedback early, making sure the technical system supported the intended user experience rather than adding unnecessary complexity.</p><figure class="fig full reveal"><span class="f"><img src="../assets/loomi/process-1.webp" width="2800" height="1449" alt="Breadboard and RFID testing on the bench" loading="lazy" decoding="async"></span></figure><p class="p-text reveal">We prototyped Dory through repeated hardware testing, moving from loose breadboard circuits to a more integrated RFID and display setup. Each build tested a specific part of the interaction: whether the reader could recognise different tags, whether the screen could respond clearly, and whether the wiring could support two RFID modules at once. The main decision was to keep testing the technical system through the lens of the user experience, not just whether the circuit worked. This helped us refine the recognition flow, reduce wiring issues and make sure each scan produced immediate, understandable feedback.</p><figure class="fig full reveal"><span class="f"><img src="../assets/loomi/process-2.webp" width="2800" height="1523" alt="Display, wiring and workshop assembly" loading="lazy" decoding="async"></span></figure></div>
+</section><section class="sec">
+  <div class="sec-label"><span class="sn">04</span><h2 class="display">OUTCOME</h2></div>
+  <div class="sec-body"><figure class="fig full reveal"><span class="f"><img src="../assets/dory/outcome.webp" width="2800" height="1567" alt="Dory in use: a hand lifting keys from the holder" loading="lazy" decoding="async"></span></figure><figure class="fig full reveal"><span class="f"><img src="../assets/dory/p-3.webp" width="2800" height="1402" alt="Final prototype" loading="lazy" decoding="async"></span></figure><figure class="fig duo reveal" style="--pos:50% 30%;"><span class="f"><img src="../assets/dory/p-1.webp" width="1776" height="2976" alt="" loading="lazy" decoding="async"></span><span class="f"><img src="../assets/dory/p-2.webp" width="1768" height="2968" alt="" loading="lazy" decoding="async"></span></figure></div>
+</section>
+<section class="sec">
+  <div class="sec-label"><span class="sn">05</span><h2 class="display">IMPACT</h2></div>
+  <div class="sec-body"><p class="p-text reveal">User testing showed Dory achieved 90% task success and reduced task completion time by 25%. Participants understood the RFID interaction quickly and were able to act on personalised reminders without extra instruction. The prototype proved that a familiar household object could become a useful departure checkpoint, reducing forgetfulness at the exact moment users leave home.</p><div class="stats reveal"><div class="stat"><b class="display grad">90%</b><span>task success in user testing</span></div><div class="stat"><b class="display grad">25%</b><span>faster task completion</span></div></div></div>
+</section>
+<section class="sec">
+  <div class="sec-label"><span class="sn">06</span><h2 class="display">MY CONTRIBUTION</h2></div>
+  <div class="sec-body"><p class="p-text reveal">For Dory, my contribution focused on shaping the smart key-holder into a clear everyday interaction. I designed the user flow for RFID recognition, personalised reminders, weather prompts and digital post-it notes, making sure the system felt simple at the moment someone leaves home. I also supported prototyping and testing, refining the timing, screen states and reminder logic based on how users understood the interaction. The final prototype achieved 90% task success and reduced task completion time by 25%, showing how a simple household object could improve daily routines through thoughtful interaction design.</p></div>
+</section>
+<section class="sec">
+  <div class="sec-label"><span class="sn">07</span><h2 class="display">TEAM</h2></div>
+  <div class="sec-body"><ul class="team reveal"><li><b>Manu Padmaraagam</b><span>Design / Prototyping Lead</span></li><li><b>Thomas Short</b><span>Design / Prototyping Lead</span></li><li><b>Laura Senas</b><span>Design / Digital Lead</span></li></ul></div>
+</section>
+    </div>
+
+    <section class="wide more" aria-labelledby="more-h">
+      <div class="more-head reveal"><h2 id="more-h" class="display">OTHER PROJECTS</h2><a href="all.html">View all projects &rarr;</a></div>
+      <div class="more-grid"><a class="other reveal" href="loomi.html" style="--bg:#282828;--c:#BDF56F"><span class="oi"><img src="../assets/loomi/logo.png" width="581" height="316" alt="LOOMI" loading="lazy" decoding="async"></span><span class="on display">LOOMI</span><span class="ot">iOS app</span></a><a class="other reveal" href="disegno.html" style="--bg:#FE9A00;--c:#FF9500"><span class="oi"><img src="../assets/disegno/logo.png" width="1006" height="566" alt="DISEGNO" loading="lazy" decoding="async"></span><span class="on display">DISEGNO</span><span class="ot">Web platform</span></a></div>
+    </section>
+  </main>
+</body>
+</html>
